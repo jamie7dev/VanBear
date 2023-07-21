@@ -1,0 +1,292 @@
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-image: url(./images/vanSkyline.png);
+  background-color: #0c1f27;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  min-width: 380px;
+  min-height: 500px;
+}
+
+/* nav bar */
+
+nav {
+  font-family: "Kanit", sans-serif;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* intro */
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 10%; */
+}
+
+.vanbear-img {
+  /* width: 10%; */
+  /* height: 10%; */
+  width: 320px;
+  margin: 20px;
+}
+
+.intro-container h1,
+.intro-container h2,
+.intro-container h3 {
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.intro-container h2,
+.intro-container h3 {
+  margin: 10px;
+}
+
+.start-btn {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: royalblue;
+  color: white;
+  /* color: black; */
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  /* box-shadow: 5px 5px rgba(0, 0, 0, 0.2); */
+  box-shadow: 4px 5px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.start-btn:hover {
+  background-color: rgb(54, 88, 188);
+  color: white;
+}
+.start-btn:active {
+  background-color: rgb(54, 88, 188);
+  color: white;
+  box-shadow: inset 4px 5px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* chatbot */
+
+.chat-container {
+  width: 420px;
+  height: 560px;
+  margin: 0 auto;
+  border-style: solid;
+  background-color: #f6f9f6;
+  border-width: 3px;
+  border-radius: 15px;
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* padding-bottom: 10px; */
+}
+
+/* hide scroll bar */
+.chat-container::-webkit-scrollbar {
+  display: none;
+}
+.chat-container {
+  -ms-overflow-style: none; /* 인터넷 익스플로러 */
+  scrollbar-width: none; /* 파이어폭스 */
+}
+
+.chat-header {
+  padding: 10px;
+  background-color: royalblue;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.chat-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.chat-history {
+  padding: 10px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.chat-input {
+  padding: 10px;
+  display: flex;
+  background-color: #d7d7d7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* position: sticky; */
+  bottom: 0;
+  /* width: 100%; */
+  /* max-width: calc(100% - 20px); */
+}
+
+.chat-input input {
+  font-family: "Poppins", sans-serif;
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.chat-input button {
+  font-family: "Poppins", sans-serif;
+  padding: 8px 16px;
+  margin-left: 10px;
+  background-color: royalblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.chat-input button:hover {
+  background-color: rgb(54, 87, 188);
+}
+.chat-input button:active {
+  background-color: rgb(50, 82, 176);
+}
+
+.message-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.user-message {
+  background-color: #fff;
+  color: #333;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+.chatbot-message {
+  background-color: #eee;
+  color: #333;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.bot-icon {
+  width: 35px;
+  height: 35px;
+}
+
+/* spinner */
+
+.spinner {
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 0;
+}
+.hide-spinner {
+  display: none;
+}
+
+/* show container */
+.hide-container {
+  display: none;
+}
+
+/* weather */
+.weather-container {
+  margin: 0;
+  padding: 0;
+}
+.weather-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+/* weather */
+
+.weather-container {
+  margin: 8px 50px;
+  font-weight: bold;
+}
+#city-name {
+  margin: 0;
+  padding: 0;
+}
+.weather-wrapper {
+  font-size: 14px;
+}
+#thermometer-img {
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 600px) {
+  /* Mobile-specific styles */
+  body {
+    width: 95%;
+  }
+  nav ul li a {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .vanbear-img {
+    width: 280px;
+  }
+  .chat-container {
+    width: 85%;
+    max-height: 500px;
+  }
+  .chat-history {
+    font-size: 14px;
+  }
+  .user-message,
+  .chatbot-message {
+    padding: 1px 8px;
+  }
+}
