@@ -4,6 +4,7 @@
 
 ### 🧸 About 
 - 6/24/2023 - 7/3/2023
+- personal project
 - Created a comprehensive virtual guide to Vancouver, enabling users to interact with the ‘Van Bear’ Chatbot powered by the Chat GPT 3.5 API to assist newcomers to Vancouver in getting acquainted with the city’s offerings
 
 <img width="1092" alt="Screen Shot 2023-07-21 at 11 25 38 AM" src="https://github.com/jamie7dev/VanBear/assets/104494969/0e2003d8-bcdc-4b00-8f26-b549a119d7a6">
