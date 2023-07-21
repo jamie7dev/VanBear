@@ -1,6 +1,6 @@
 # VanBear
 
-### vanbearguide.com
+### https://vanbearguide.com
 
 ### 🧸 About 
 - 6/24/2023 - 7/3/2023
