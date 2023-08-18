@@ -1,4 +1,4 @@
-# VanBear
+# VanBear virtual guide chatbot app
 
 ### https://vanbearguide.com
 
